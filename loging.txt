@@ -1,0 +1,3 @@
+User Login: http://localhost:8080/login.php
+Admin Login: http://localhost:8080/admin/index.php
+http://localhost:8081/index.php?route=/database/structure&db=event_booking_system

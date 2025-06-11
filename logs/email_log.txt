@@ -1,0 +1,168 @@
+
+=== EMAIL SENT ===
+Date: 2025-06-11 15:38:15
+To: nkumbelarryetah@gmail.com
+Subject: New Reply to Your Message - EventBooking Cameroon
+Content: 
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>New Reply from EventBooking Cameroon</title>
+        <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f4f4f4; }
+            .container { max-width: 600px; margin: 0 auto; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+            .header { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 30px; text-align: center; }
+            .header h1 { margin: 0; font-size: 24px; }
+            .content { padding: 30px; }
+            .message-info { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #667eea; }
+            .reply-box { background: #e7f3ff; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #007bff; }
+            .button { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; margin: 10px 5px; }
+            .footer { background: #f8f9fa; padding: 20px; text-align: center; color: #666; font-size: 14px; }
+            .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }
+            @media (max-width: 600px) { .container { margin: 10px; } .content { padding: 20px; } }
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='header'>
+                <div class='logo'>🎪 EventBooking Cameroon</div>
+                <h1>New Reply to Your Message</h1>
+            </div>
+            
+            <div class='content'>
+                <p>Hello <strong>John</strong>,</p>
+                
+                <p>Great news! Our support team has replied to your message. Here are the details:</p>
+                
+                <div class='message-info'>
+                    <h3>📧 Your Original Message</h3>
+                    <p><strong>Message ID:</strong> #3</p>
+                    <p><strong>Subject:</strong> Hello</p>
+                </div>
+                
+                <div class='reply-box'>
+                    <h3>💬 Our Reply</h3>
+                    <p>okay</p>
+                </div>
+                
+                <p>You can view the complete conversation and reply if needed by logging into your account:</p>
+                
+                <div style='text-align: center; margin: 30px 0;'>
+                    <a href='http://localhost:8080/user/messages.php' class='button'>📱 View Messages</a>
+                    <a href='http://localhost:8080/login.php' class='button'>🔐 Login to Account</a>
+                </div>
+                
+                <div style='background: #fff3cd; padding: 15px; border-radius: 8px; margin: 20px 0;'>
+                    <p><strong>💡 Quick Tip:</strong> You can reply directly through your message dashboard to continue the conversation with our support team.</p>
+                </div>
+                
+                <p>If you have any questions or need further assistance, feel free to reply to this conversation or contact us directly.</p>
+                
+                <p>Best regards,<br>
+                <strong>EventBooking Cameroon Support Team</strong></p>
+            </div>
+            
+            <div class='footer'>
+                <p><strong>EventBooking Cameroon</strong><br>
+                Avenue Kennedy, Plateau District<br>
+                Yaoundé, Cameroon<br>
+                📞 +237 652 731 798 | 📧 nkumbelarry@gmail.com</p>
+                
+                <p style='margin-top: 20px; font-size: 12px; color: #999;'>
+                    This email was sent because you have an active conversation with our support team. 
+                    If you believe this was sent in error, please contact us.
+                </p>
+            </div>
+        </div>
+    </body>
+    </html>
+
+=====================================
+
+
+=== EMAIL SENT ===
+Date: 2025-06-11 15:39:14
+To: nkumbelarryetah@gmail.com
+Subject: New Reply to Your Message - EventBooking Cameroon
+Content: 
+
+    <!DOCTYPE html>
+    <html>
+    <head>
+        <meta charset='UTF-8'>
+        <meta name='viewport' content='width=device-width, initial-scale=1.0'>
+        <title>New Reply from EventBooking Cameroon</title>
+        <style>
+            body { font-family: Arial, sans-serif; line-height: 1.6; color: #333; margin: 0; padding: 0; background-color: #f4f4f4; }
+            .container { max-width: 600px; margin: 0 auto; background: white; border-radius: 10px; overflow: hidden; box-shadow: 0 0 20px rgba(0,0,0,0.1); }
+            .header { background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 30px; text-align: center; }
+            .header h1 { margin: 0; font-size: 24px; }
+            .content { padding: 30px; }
+            .message-info { background: #f8f9fa; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #667eea; }
+            .reply-box { background: #e7f3ff; padding: 20px; border-radius: 8px; margin: 20px 0; border-left: 4px solid #007bff; }
+            .button { display: inline-block; background: linear-gradient(135deg, #667eea, #764ba2); color: white; padding: 12px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; margin: 10px 5px; }
+            .footer { background: #f8f9fa; padding: 20px; text-align: center; color: #666; font-size: 14px; }
+            .logo { font-size: 28px; font-weight: bold; margin-bottom: 10px; }
+            @media (max-width: 600px) { .container { margin: 10px; } .content { padding: 20px; } }
+        </style>
+    </head>
+    <body>
+        <div class='container'>
+            <div class='header'>
+                <div class='logo'>🎪 EventBooking Cameroon</div>
+                <h1>New Reply to Your Message</h1>
+            </div>
+            
+            <div class='content'>
+                <p>Hello <strong>John</strong>,</p>
+                
+                <p>Great news! Our support team has replied to your message. Here are the details:</p>
+                
+                <div class='message-info'>
+                    <h3>📧 Your Original Message</h3>
+                    <p><strong>Message ID:</strong> #3</p>
+                    <p><strong>Subject:</strong> Hello</p>
+                </div>
+                
+                <div class='reply-box'>
+                    <h3>💬 Our Reply</h3>
+                    <p>okay</p>
+                </div>
+                
+                <p>You can view the complete conversation and reply if needed by logging into your account:</p>
+                
+                <div style='text-align: center; margin: 30px 0;'>
+                    <a href='http://localhost:8080/user/messages.php' class='button'>📱 View Messages</a>
+                    <a href='http://localhost:8080/login.php' class='button'>🔐 Login to Account</a>
+                </div>
+                
+                <div style='background: #fff3cd; padding: 15px; border-radius: 8px; margin: 20px 0;'>
+                    <p><strong>💡 Quick Tip:</strong> You can reply directly through your message dashboard to continue the conversation with our support team.</p>
+                </div>
+                
+                <p>If you have any questions or need further assistance, feel free to reply to this conversation or contact us directly.</p>
+                
+                <p>Best regards,<br>
+                <strong>EventBooking Cameroon Support Team</strong></p>
+            </div>
+            
+            <div class='footer'>
+                <p><strong>EventBooking Cameroon</strong><br>
+                Avenue Kennedy, Plateau District<br>
+                Yaoundé, Cameroon<br>
+                📞 +237 652 731 798 | 📧 nkumbelarry@gmail.com</p>
+                
+                <p style='margin-top: 20px; font-size: 12px; color: #999;'>
+                    This email was sent because you have an active conversation with our support team. 
+                    If you believe this was sent in error, please contact us.
+                </p>
+            </div>
+        </div>
+    </body>
+    </html>
+
+=====================================
+
