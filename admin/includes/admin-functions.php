@@ -175,18 +175,15 @@ function logAdminActivity($action, $details = '') {
     $pdo = getDBConnection();
     
     // Create admin_activity_log table if it doesn't exist
-    $pdo->exec("
-        CREATE TABLE IF NOT EXISTS admin_activity_log (
-            id INT AUTO_INCREMENT PRIMARY KEY,
-            admin_id INT NOT NULL,
-            action VARCHAR(255) NOT NULL,
-            details TEXT,
-            ip_address VARCHAR(45),
-            user_agent TEXT,
-            created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP,
-            FOREIGN KEY (admin_id) REFERENCES admin_users(id) ON DELETE CASCADE
-        )
-    ");
+CREATE TABLE IF NOT EXISTS admin_activity_log (
+    id SERIAL PRIMARY KEY,
+    admin_id INTEGER NOT NULL,
+    action VARCHAR(255) NOT NULL,
+    details TEXT,
+    ip_address VARCHAR(45),
+    user_agent TEXT,
+    created_at TIMESTAMP DEFAULT CURRENT_TIMESTAMP
+)
     
     $stmt = $pdo->prepare("
         INSERT INTO admin_activity_log (admin_id, action, details, ip_address, user_agent) 
