@@ -49,16 +49,17 @@ function register($data) {
         return false;
     }
     
-    // Insert new user
-    $stmt = $pdo->prepare("INSERT INTO users (username, email, password, first_name, last_name, phone, address) VALUES (?, ?, ?, ?, ?, ?, ?)");
+    // Combine first and last name into full_name
+    $full_name = trim(($data['first_name'] ?? '') . ' ' . ($data['last_name'] ?? ''));
+    
+    // Insert new user (matching the database schema)
+    $stmt = $pdo->prepare("INSERT INTO users (username, email, password, full_name, phone) VALUES (?, ?, ?, ?, ?)");
     return $stmt->execute([
         $data['username'],
         $data['email'],
         password_hash($data['password'], PASSWORD_DEFAULT),
-        $data['first_name'],
-        $data['last_name'],
-        $data['phone'] ?? '',
-        $data['address'] ?? ''
+        $full_name,
+        $data['phone'] ?? ''
     ]);
 }
 
