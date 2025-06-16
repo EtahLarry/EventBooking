@@ -20,7 +20,7 @@ $stmt = $pdo->query("SELECT COUNT(*) as total FROM bookings");
 $totalBookings = $stmt->fetch()['total'];
 
 // Total revenue
-$stmt = $pdo->query("SELECT SUM(total_amount) as total FROM bookings WHERE payment_status = 'completed'");
+$stmt = $pdo->query("SELECT SUM(total_amount) as total FROM bookings WHERE status = 'confirmed'");
 $totalRevenue = $stmt->fetch()['total'] ?? 0;
 
 // Recent bookings
@@ -29,7 +29,7 @@ $stmt = $pdo->query("
     FROM bookings b 
     JOIN events e ON b.event_id = e.id 
     JOIN users u ON b.user_id = u.id 
-    ORDER BY b.booking_date DESC 
+    ORDER BY b.created_at DESC 
     LIMIT 10
 ");
 $recentBookings = $stmt->fetchAll();
@@ -331,7 +331,7 @@ $popularEvents = $stmt->fetchAll();
                                                             <?php echo ucfirst($booking['status']); ?>
                                                         </span>
                                                     </td>
-                                                    <td><?php echo date('M j, Y', strtotime($booking['booking_date'])); ?></td>
+                                                    <td><?php echo date('M j, Y', strtotime($booking['created_at'])); ?></td>
                                                 </tr>
                                                 <?php endforeach; ?>
                                             </tbody>
