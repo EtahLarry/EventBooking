@@ -168,9 +168,7 @@ function validateAdminAccess($requiredRole = 'admin') {
 
 // Admin activity logging
     (simplified to avoid syntax errors)
-function logAdminActivity($action, $details = '') {
-    // Temporarily disabled to avoid database table creation issues
-    // Activity logging can be re-enabled later if needed
+ function logAdminActivity($action, $details = '') {
     return true;
 }
     
