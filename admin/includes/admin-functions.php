@@ -17,7 +17,7 @@ function requireAdminLogin() {
 
 function adminLogin($username, $password) {
     $pdo = getDBConnection();
-    $stmt = $pdo->prepare("SELECT * FROM admin_users WHERE username = ? AND status = 'active'");
+    $stmt = $pdo->prepare("SELECT * FROM admin_users WHERE username = ?");
     $stmt->execute([$username]);
     $admin = $stmt->fetch();
     
@@ -26,10 +26,6 @@ function adminLogin($username, $password) {
         $_SESSION['admin_username'] = $admin['username'];
         $_SESSION['admin_email'] = $admin['email'];
         $_SESSION['admin_role'] = $admin['role'];
-        
-        // Update last login
-        $stmt = $pdo->prepare("UPDATE admin_users SET last_login = NOW() WHERE id = ?");
-        $stmt->execute([$admin['id']]);
         
         return true;
     }
@@ -73,17 +69,19 @@ function createAdmin($data) {
         return false;
     }
     
-    // Insert new admin
+    // Combine first and last name into full_name
+    $full_name = trim(($data['first_name'] ?? '') . ' ' . ($data['last_name'] ?? ''));
+    
+    // Insert new admin (matching the database schema)
     $stmt = $pdo->prepare("
-        INSERT INTO admin_users (username, email, password, first_name, last_name, role, status, created_at) 
-        VALUES (?, ?, ?, ?, ?, ?, 'active', NOW())
+        INSERT INTO admin_users (username, email, password, full_name, role) 
+        VALUES (?, ?, ?, ?, ?)
     ");
     return $stmt->execute([
         $data['username'],
         $data['email'],
         password_hash($data['password'], PASSWORD_DEFAULT),
-        $data['first_name'],
-        $data['last_name'],
+        $full_name,
         $data['role'] ?? 'admin'
     ]);
 }
@@ -110,12 +108,12 @@ function getAdminStats() {
     $stmt = $pdo->query("SELECT SUM(total_amount) as revenue FROM bookings WHERE status = 'confirmed'");
     $stats['total_revenue'] = $stmt->fetch()['revenue'] ?? 0;
     
-    // Recent bookings
-    $stmt = $pdo->query("SELECT COUNT(*) as count FROM bookings WHERE DATE(booking_date) = CURDATE()");
+    // Recent bookings (using PostgreSQL compatible syntax)
+    $stmt = $pdo->query("SELECT COUNT(*) as count FROM bookings WHERE DATE(created_at) = CURRENT_DATE");
     $stats['today_bookings'] = $stmt->fetch()['count'];
     
-    // Upcoming events
-    $stmt = $pdo->query("SELECT COUNT(*) as count FROM events WHERE date >= CURDATE()");
+    // Upcoming events (using PostgreSQL compatible syntax)
+    $stmt = $pdo->query("SELECT COUNT(*) as count FROM events WHERE date >= CURRENT_DATE");
     $stats['upcoming_events'] = $stmt->fetch()['count'];
     
     return $stats;
@@ -123,7 +121,7 @@ function getAdminStats() {
 
 function getAllAdmins() {
     $pdo = getDBConnection();
-    $stmt = $pdo->query("SELECT id, username, email, first_name, last_name, role, status, created_at, last_login FROM admin_users ORDER BY created_at DESC");
+    $stmt = $pdo->query("SELECT id, username, email, full_name, role, created_at FROM admin_users ORDER BY created_at DESC");
     return $stmt->fetchAll();
 }
 
